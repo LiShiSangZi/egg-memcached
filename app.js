@@ -69,7 +69,7 @@ class Client {
    */
   del(key) {
     return new Promise((resolve, reject) => {
-      this.mem.del(keys, (err) => {
+      this.mem.del(key, (err) => {
         if (err) {
           reject(err);
         } else {
